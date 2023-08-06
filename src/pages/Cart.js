@@ -1,6 +1,8 @@
 import { CartCard } from "../components";
+import { useTitle } from "../hooks/useTitle";
 
 export const Cart = () => {
+    useTitle("Cart");
 
     const items_in_cart = [
         {"id": 1, "name": "Sony Wh-Ch510 Bluetooth Wireless", "price": 149, "image": "/assets/images/1001.png"},

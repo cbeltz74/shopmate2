@@ -1,4 +1,3 @@
-import { BrowserRouter } from "react-router-dom";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import "./Header.css";
@@ -13,8 +12,8 @@ export const Header = () => {
         </Link>
 
         <nav className="navigation">
-            <NavLink to="/" end>Home</NavLink>
-            <NavLink to="/cart">Cart</NavLink>
+            <NavLink to="/" className ="link" end>Home</NavLink>
+            <NavLink to="/cart" className="link">Cart</NavLink>
         </nav>
     
         <Link to="/cart" className="items">
